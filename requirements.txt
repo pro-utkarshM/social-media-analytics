@@ -1,0 +1,4 @@
+plaintext
+cassandra-driver
+openai
+pytest
