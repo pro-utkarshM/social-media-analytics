@@ -1,4 +1,10 @@
-ASTRA_CLIENT_ID = "<your_client_id>"
-ASTRA_CLIENT_SECRET = "<your_client_secret>"
-ASTRA_DB_ENDPOINT = "<your_db_endpoint>" 
-OPENAI_API_KEY = "<your_openai_api_key>"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+ASTRA_CLIENT_ID = os.getenv("ASTRA_CLIENT_ID")
+ASTRA_CLIENT_SECRET = os.getenv("ASTRA_CLIENT_SECRET")
+ASTRA_DB_ENDPOINT = os.getenv("ASTRA_DB_ENDPOINT")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
